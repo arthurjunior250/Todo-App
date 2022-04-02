@@ -21,6 +21,7 @@ function TodoList() {
 
     setTodos(newTodos);
     console.log(...todos);
+    window.location.reload();
   };
 
   const updateTodo = (todoId, newValue) => {
@@ -29,12 +30,14 @@ function TodoList() {
     }
 
     setTodos(prev => prev.map(item => (item.id === todoId ? newValue : item)));
+    window.location.reload();
   };
 
   const removeTodo = id => {
     const removedArr = [...todos].filter(todo => todo.id !== id);
 
     setTodos(removedArr);
+    window.location.reload();
   };
 
   const completeTodo = id => {

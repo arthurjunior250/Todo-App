@@ -42,8 +42,9 @@
     border-radius: 10px;
     outline: none;
     width: 320px;
- background-color: white;
+    background-color: white;
     color: black;
+    border-color: #FF8C00;
   }
   
   .todo-input::placeholder {
@@ -119,4 +120,14 @@
 input{
   margin-left: 20px;
   margin-top: 24px;
+}
+.tasks{
+  color:	#FF8C00;
+  font-size: 30px;
+  text-transform: uppercase;
+  float: left;
+}
+.desc{
+  float: left;
+  text-transform: capitalize;
 }
